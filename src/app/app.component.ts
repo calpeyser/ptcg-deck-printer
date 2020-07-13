@@ -8,14 +8,16 @@ import { CardService } from '../card/card.service';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+  cards : Card[];
 
   constructor(private cardService : CardService) {}
 
   ngOnInit() {
+    this.cards = this.cardService.getCards()
   }
 
   getCards() {
-    return this.cardService.getCards()
+    return this.cards
   }
 
 }

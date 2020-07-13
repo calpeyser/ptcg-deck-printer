@@ -1,3 +1,4 @@
 <ul class="list-group">
-  <app-card-row *ngFor="let card of cards" [(card)]="card"></app-card-row>
+  <app-card-row *ngFor="let card of cards; let i = index"
+    [card]="cards[i]" (cardChange)="this.cards[i]=$event"></app-card-row>
 </ul>

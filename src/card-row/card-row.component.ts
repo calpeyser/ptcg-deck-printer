@@ -21,8 +21,10 @@ export class CardRowComponent implements OnInit {
   }
 
   decrement() {
-    this.card.count = this.card.count - 1;
-    this.cardChange.emit(this.card)
+    if (this.card.count > 0) {
+      this.card.count = this.card.count - 1;
+      this.cardChange.emit(this.card)
+    }
   }
 
 }
