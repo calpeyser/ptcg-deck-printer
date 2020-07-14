@@ -8,6 +8,7 @@ import { HelloComponent } from './hello.component';
 import { DeckSelectionComponent } from '../deck-selection/deck-selection.component';
 import { CardTableComponent } from '../card-table/card-table.component';
 import { CardRowComponent } from '../card-row/card-row.component';
+import { GenerateButtonComponent } from '../generate-button/generate-button.component';
 
 @NgModule({
   imports:      [ 
@@ -21,6 +22,7 @@ import { CardRowComponent } from '../card-row/card-row.component';
     DeckSelectionComponent,
     CardTableComponent,
     CardRowComponent,
+    GenerateButtonComponent,
   ],
   bootstrap:    [ AppComponent ]
 })
